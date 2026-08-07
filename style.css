@@ -1,0 +1,125 @@
+﻿/* Style global */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0;
+}
+
+/* Menu horizontal (Logo à gauche, liens à droite) */
+nav.horizontal {
+  display: flex;
+  justify-content: space-between; /* Pousse le logo à gauche et la liste à droite */
+  align-items: center;            /* Aligne verticalement le logo et les liens */
+  background-color: #2c3e50;
+  padding: 0 20px;
+}
+
+nav.horizontal ul {
+  list-style: none;  
+  margin: 0; 
+  padding: 0; 
+  display: flex;                  /* Aligne les liens horizontalement */
+}
+
+nav.horizontal ul li a { 
+  display: block; 
+  padding: 20px 15px;  
+  color: white;  
+  text-decoration: none; 
+}
+
+nav.horizontal ul li a:hover { 
+  background-color: #34495e; 
+}
+
+/* Ajustement de la photo locale du logo */
+nav.horizontal img {
+  height: 50px; 
+  width: auto;  
+  display: block;
+}
+
+
+/* Menu vertical (Cible uniquement la navigation latérale) */
+nav.vertical {  
+  width: 200px;  
+  background-color: #2c3e50;  /* Fond sombre pour faire ressortir le texte blanc */
+  padding: 15px; 
+  float: left;         
+}
+nav.vertical ul {  
+  list-style: none;  
+  padding: 0; 
+  margin: 0;
+  display: block;      
+}
+nav.vertical ul li {  
+  margin-bottom: 12px; 
+}
+nav.vertical ul li a {  
+  text-decoration: none; 
+  color: #ffffff !important;  /* Force la couleur blanche pour écraser le bleu */
+  font-weight: bold; 
+  display: block;            /* Améliore la zone de clic */
+  opacity: 1 !important;     /* Assure une visibilité totale immédiate */
+}
+nav.vertical ul li a:hover { 
+  color: #3498db !important;  /* Le texte devient bleu clair uniquement au survol */
+}
+
+/* Zone principale */
+.mainstyle {  
+  margin-left: 220px; /* espace pour le menu vertical */
+  padding: 20px; 
+
+}
+.mainstyle img { 
+  max-width: 50%;  
+  height: auto; 
+  border-radius: 8px;
+   
+}
+.mainstyle h2 {
+  color: #2c3e50; 
+}
+
+.mainstyle div {
+  text-align: center;
+  }
+/* Formulaires */
+.formstyle {  
+  margin: 20px 0;  
+  display: flex;  
+  flex-direction: column;  
+  max-width: 400px; 
+}
+.formstyle label { 
+  margin: 8px 0 4px; 
+  font-weight: bold; 
+}
+.formstyle input {
+  padding: 8px;  
+  border: 1px solid #bdc3c7;  
+  border-radius: 4px; 
+}
+.btnstyle { 
+  margin-top: 12px;  
+  padding: 10px;  
+  background-color: #2980b9;  
+  color: white;
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer; 
+}
+.btnstyle:hover { 
+  background-color: #3498db; 
+}
+
+/* Footer */
+footer { 
+  text-align: center;  
+  padding: 10px;  
+  background-color: #2c3e50;  
+  color: white;  
+  margin-top: 20px; 
+}
